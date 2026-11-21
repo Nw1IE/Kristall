@@ -1,0 +1,11 @@
+{
+  "name": "granit-crm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ERP/CRM система мастерской памятников и обработки камня",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "start": "node -e \"const { spawn } = require('child_process'); spawn('npm', ['start'], { cwd: 'server', stdio: 'inherit', shell: true }); spawn('npm', ['run', 'dev'], { cwd: 'client', stdio: 'inherit', shell: true });\""
+  }
+}
